@@ -1,0 +1,2 @@
+INFO:root:TRAINING [Epoch : 1] loss : 1.0520, Accuracy : 55.4758
+INFO:root:VALIDATION [Epoch : 1] loss : 1.0389, Accuracy : 53.4109

@@ -1,0 +1,2 @@
+[INFO|MainNetwork.py:171] 2019-10-21 18:23:19,008 > TRAINING [Epoch : 1] loss : 1.0520, Accuracy : 55.4758
+[INFO|MainNetwork.py:197] 2019-10-21 18:23:29,396 > VALIDATION [Epoch : 1] loss : 1.0389, Accuracy : 53.4109
