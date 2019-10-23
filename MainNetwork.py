@@ -13,6 +13,8 @@ from Tensorboard import Mytensorboard
 logger = LoggingHelper.get_instance().logger
 
 
+from itertools import cycle
+
 # LoadData에서 담아놓은 data load
 class MyDataset(Dataset):
     def __init__(self, data_class):
@@ -86,6 +88,10 @@ class ConvNet(nn.Module):
 
 
 if '__main__' == __name__:
+    logger.info('Configs')
+    for key,value in NetManager.cfg.member.items():
+        logger.info('%s : %s' %(key,value))
+
     batch_size = NetManager.BATCH_SIZE
     train_data= DataBatch(istraining=NetManager.TRAINING, batch_size=batch_size, dataset_num=NetManager.DATASET_NUM)
     valid_data= DataBatch(istraining=NetManager.VALIDATION, batch_size=batch_size, dataset_num=NetManager.DATASET_NUM//8)
@@ -96,8 +102,8 @@ if '__main__' == __name__:
     validationDataset = MyDataset(valid_data)
     testDataset = MyDataset(test_data)
 
-    trainingDataLoader = DataLoader(trainingDataset, batch_size=DataBatch.BATCH_SIZE, shuffle=True, num_workers=DataBatch.NUM_WORKER)
-    validationDataLoader = DataLoader(validationDataset, batch_size=DataBatch.BATCH_SIZE, shuffle=True, num_workers=DataBatch.NUM_WORKER)
+    trainingDataLoader = DataLoader(trainingDataset, batch_size=DataBatch.BATCH_SIZE, shuffle=True, drop_last=True,num_workers=DataBatch.NUM_WORKER)
+    validationDataLoader = DataLoader(validationDataset, batch_size=DataBatch.BATCH_SIZE, shuffle=True, drop_last=True,num_workers=DataBatch.NUM_WORKER)
     testDataLoader = DataLoader(testDataset, batch_size=1, shuffle=True, num_workers=0)
 
 
@@ -108,12 +114,19 @@ if '__main__' == __name__:
     net = ConvNet(2 * modeNum, modeNum, trainingDataset.block_size, modeNum)
     summary(net, (2 * modeNum, trainingDataset.block_size, trainingDataset.block_size), device='cpu')
 
+    train_iter = cycle(trainingDataLoader)
+    valid_iter = cycle(validationDataLoader)
+    test_iter = cycle(testDataLoader)
+
+
+
     # loss function : Cross Entropy
     # optimization  : Adam optimization
     # lr_scheduler  : learning rate 조정
     criterion = nn.CrossEntropyLoss()
     optimizer = optim.Adam(net.parameters(), lr=DataBatch.LEARNING_RATE)
     lr_scheduler = optim.lr_scheduler.MultiStepLR(optimizer=optimizer, milestones=[int(DataBatch.OBJECT_EPOCH*0.5), int(DataBatch.OBJECT_EPOCH*0.75)], gamma=0.1, last_epoch=-1)
+
 
     # GPU 병렬로 사용할 지 단일로 사용할 지 처리하는 부분
     if DataBatch.IS_GPU:
@@ -128,17 +141,21 @@ if '__main__' == __name__:
     fBatch_size = float(DataBatch.BATCH_SIZE)
     tensorboard = Mytensorboard()
 
+    logger.info('Training Set : %s %s' %(len(trainingDataLoader), train_data.each_data_num))
+    logger.info('Validation Set : %s' %len(validationDataLoader))
+    logger.info('Test set : %s' %len(testDataLoader))
+    logger.info('Training Start')
     # EPOCH 수만큼 반복
     for epoch in range(DataBatch.OBJECT_EPOCH):
         train_loss = 0.0
         train_acc = 0.0
 
         # data 개수만큼 반복 (Training)
-        for i, (modes, residual) in enumerate(trainingDataLoader, 0):
+        for i in range(len(trainingDataLoader)):
+            modes, residual = next(train_iter)
             if DataBatch.IS_GPU:
                 modes = modes.cuda()
                 residual = residual.cuda()
-            print('1')
             # mode : prediction mode
             # residual : residual block value
             # output : network 학습 후 값 (softmax)
@@ -173,7 +190,8 @@ if '__main__' == __name__:
             val_acc = 0.0
 
             # data 개수만큼 반복 (Validation)
-            for j, (modes, residual) in enumerate(validationDataLoader, 0):
+            for i in range(len(validationDataLoader)):
+                modes, residual = next(valid_iter)
                 if DataBatch.IS_GPU:
                     modes = modes.cuda()
                     residual = residual.cuda()
@@ -197,7 +215,8 @@ if '__main__' == __name__:
         test_loss = 0.0
         test_acc = 0.0
 
-        for i, (modes, residual) in enumerate(testDataLoader, 0):
+        for i in range(len(testDataLoader)):
+            modes, residual = next(test_iter)
             if DataBatch.IS_GPU:
                 modes = modes.cuda()
                 residual = residual.cuda()

@@ -1,0 +1,65 @@
+INFO:root:Configs
+INFO:root:NET_INFO_PATH : ./config.yml
+INFO:root:EXPERIMENT_NAME : jyjung_test
+INFO:root:IS_GPU : 1
+INFO:root:TEST : 0
+INFO:root:TRAINING : 1
+INFO:root:VALIDATION : 2
+INFO:root:DATASET_PATH : /home/yangwookim/Desktop/JY_Data/RMD_32x32/Dataset
+INFO:root:SAVE_PATH : model
+INFO:root:PU_SIZE : [8, 32]
+INFO:root:QP_LIST : [22, 32]
+INFO:root:MODE_NUM : [11, 6]
+INFO:root:INIT_LEARNING_RATE : 0.001
+INFO:root:PRINT_PERIOD : 100
+INFO:root:DATASET_NUM : 20000
+INFO:root:BATCH_SIZE : 120
+INFO:root:OBJECT_EPOCH : 20
+INFO:root:GPU_MONITOR : 1
+INFO:root:NUM_WORKER : 12
+INFO:root:Training Set : 163 47
+INFO:root:Validation Set : 20
+INFO:root:Test set : 2478
+INFO:root:Training Start
+INFO:root:TRAINING [Epoch : 1] loss : 1.0787, Accuracy : 53.3917
+INFO:root:VALIDATION [Epoch : 1] loss : 1.0625, Accuracy : 54.9167
+INFO:root:TRAINING [Epoch : 2] loss : 1.0516, Accuracy : 55.0083
+INFO:root:VALIDATION [Epoch : 2] loss : 1.0478, Accuracy : 54.7500
+INFO:root:TRAINING [Epoch : 3] loss : 1.0484, Accuracy : 55.1167
+INFO:root:VALIDATION [Epoch : 3] loss : 1.0459, Accuracy : 54.9167
+INFO:root:TRAINING [Epoch : 4] loss : 1.0470, Accuracy : 55.3333
+INFO:root:VALIDATION [Epoch : 4] loss : 1.0448, Accuracy : 54.9583
+INFO:root:TRAINING [Epoch : 5] loss : 1.0457, Accuracy : 55.2250
+INFO:root:VALIDATION [Epoch : 5] loss : 1.0433, Accuracy : 55.5417
+INFO:root:TRAINING [Epoch : 6] loss : 1.0445, Accuracy : 55.4167
+INFO:root:VALIDATION [Epoch : 6] loss : 1.0437, Accuracy : 55.2917
+INFO:root:TRAINING [Epoch : 7] loss : 1.0427, Accuracy : 55.8500
+INFO:root:VALIDATION [Epoch : 7] loss : 1.0479, Accuracy : 55.3750
+INFO:root:TRAINING [Epoch : 8] loss : 1.0422, Accuracy : 55.9250
+INFO:root:VALIDATION [Epoch : 8] loss : 1.0433, Accuracy : 55.6250
+INFO:root:TRAINING [Epoch : 9] loss : 1.0404, Accuracy : 56.1250
+INFO:root:VALIDATION [Epoch : 9] loss : 1.0460, Accuracy : 55.8750
+INFO:root:TRAINING [Epoch : 10] loss : 1.0395, Accuracy : 55.7917
+INFO:root:VALIDATION [Epoch : 10] loss : 1.0452, Accuracy : 56.0417
+INFO:root:TRAINING [Epoch : 11] loss : 1.0332, Accuracy : 56.6667
+INFO:root:VALIDATION [Epoch : 11] loss : 1.0402, Accuracy : 56.1667
+INFO:root:TRAINING [Epoch : 12] loss : 1.0298, Accuracy : 56.5667
+INFO:root:VALIDATION [Epoch : 12] loss : 1.0393, Accuracy : 56.2917
+INFO:root:TRAINING [Epoch : 13] loss : 1.0279, Accuracy : 56.9250
+INFO:root:VALIDATION [Epoch : 13] loss : 1.0387, Accuracy : 56.2500
+INFO:root:TRAINING [Epoch : 14] loss : 1.0264, Accuracy : 56.9500
+INFO:root:VALIDATION [Epoch : 14] loss : 1.0381, Accuracy : 56.2917
+INFO:root:TRAINING [Epoch : 15] loss : 1.0252, Accuracy : 57.0250
+INFO:root:VALIDATION [Epoch : 15] loss : 1.0379, Accuracy : 56.5833
+INFO:root:TRAINING [Epoch : 16] loss : 1.0235, Accuracy : 57.3750
+INFO:root:VALIDATION [Epoch : 16] loss : 1.0378, Accuracy : 56.5417
+INFO:root:TRAINING [Epoch : 17] loss : 1.0230, Accuracy : 57.4750
+INFO:root:VALIDATION [Epoch : 17] loss : 1.0376, Accuracy : 56.5833
+INFO:root:TRAINING [Epoch : 18] loss : 1.0226, Accuracy : 57.4917
+INFO:root:VALIDATION [Epoch : 18] loss : 1.0376, Accuracy : 56.5417
+INFO:root:TRAINING [Epoch : 19] loss : 1.0224, Accuracy : 57.4500
+INFO:root:VALIDATION [Epoch : 19] loss : 1.0376, Accuracy : 56.5417
+INFO:root:TRAINING [Epoch : 20] loss : 1.0222, Accuracy : 57.4250
+INFO:root:VALIDATION [Epoch : 20] loss : 1.0375, Accuracy : 56.6667
+INFO:root:TEST [Epoch : 1] loss : 1.0607, Accuracy : 52.6634
+INFO:root:Epoch 20 Finished

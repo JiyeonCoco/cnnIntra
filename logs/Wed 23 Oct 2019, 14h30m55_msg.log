@@ -1,0 +1,65 @@
+[INFO|MainNetwork.py:91] 2019-10-23 14:30:55,553 > Configs
+[INFO|MainNetwork.py:93] 2019-10-23 14:30:55,553 > NET_INFO_PATH : ./config.yml
+[INFO|MainNetwork.py:93] 2019-10-23 14:30:55,553 > EXPERIMENT_NAME : jyjung_test
+[INFO|MainNetwork.py:93] 2019-10-23 14:30:55,553 > IS_GPU : 1
+[INFO|MainNetwork.py:93] 2019-10-23 14:30:55,553 > TEST : 0
+[INFO|MainNetwork.py:93] 2019-10-23 14:30:55,553 > TRAINING : 1
+[INFO|MainNetwork.py:93] 2019-10-23 14:30:55,553 > VALIDATION : 2
+[INFO|MainNetwork.py:93] 2019-10-23 14:30:55,554 > DATASET_PATH : /home/yangwookim/Desktop/JY_Data/RMD_32x32/Dataset
+[INFO|MainNetwork.py:93] 2019-10-23 14:30:55,554 > SAVE_PATH : model
+[INFO|MainNetwork.py:93] 2019-10-23 14:30:55,554 > PU_SIZE : [8, 32]
+[INFO|MainNetwork.py:93] 2019-10-23 14:30:55,554 > QP_LIST : [22, 32]
+[INFO|MainNetwork.py:93] 2019-10-23 14:30:55,554 > MODE_NUM : [11, 6]
+[INFO|MainNetwork.py:93] 2019-10-23 14:30:55,554 > INIT_LEARNING_RATE : 0.001
+[INFO|MainNetwork.py:93] 2019-10-23 14:30:55,554 > PRINT_PERIOD : 100
+[INFO|MainNetwork.py:93] 2019-10-23 14:30:55,554 > DATASET_NUM : 20000
+[INFO|MainNetwork.py:93] 2019-10-23 14:30:55,554 > BATCH_SIZE : 120
+[INFO|MainNetwork.py:93] 2019-10-23 14:30:55,554 > OBJECT_EPOCH : 20
+[INFO|MainNetwork.py:93] 2019-10-23 14:30:55,555 > GPU_MONITOR : 1
+[INFO|MainNetwork.py:93] 2019-10-23 14:30:55,555 > NUM_WORKER : 12
+[INFO|MainNetwork.py:144] 2019-10-23 14:31:17,204 > Training Set : 163 47
+[INFO|MainNetwork.py:145] 2019-10-23 14:31:17,204 > Validation Set : 20
+[INFO|MainNetwork.py:146] 2019-10-23 14:31:17,205 > Test set : 2478
+[INFO|MainNetwork.py:147] 2019-10-23 14:31:17,205 > Training Start
+[INFO|MainNetwork.py:182] 2019-10-23 14:31:18,446 > TRAINING [Epoch : 1] loss : 1.0787, Accuracy : 53.3917
+[INFO|MainNetwork.py:208] 2019-10-23 14:31:19,284 > VALIDATION [Epoch : 1] loss : 1.0625, Accuracy : 54.9167
+[INFO|MainNetwork.py:182] 2019-10-23 14:31:20,379 > TRAINING [Epoch : 2] loss : 1.0516, Accuracy : 55.0083
+[INFO|MainNetwork.py:208] 2019-10-23 14:31:21,151 > VALIDATION [Epoch : 2] loss : 1.0478, Accuracy : 54.7500
+[INFO|MainNetwork.py:182] 2019-10-23 14:31:22,228 > TRAINING [Epoch : 3] loss : 1.0484, Accuracy : 55.1167
+[INFO|MainNetwork.py:208] 2019-10-23 14:31:22,972 > VALIDATION [Epoch : 3] loss : 1.0459, Accuracy : 54.9167
+[INFO|MainNetwork.py:182] 2019-10-23 14:31:24,041 > TRAINING [Epoch : 4] loss : 1.0470, Accuracy : 55.3333
+[INFO|MainNetwork.py:208] 2019-10-23 14:31:24,784 > VALIDATION [Epoch : 4] loss : 1.0448, Accuracy : 54.9583
+[INFO|MainNetwork.py:182] 2019-10-23 14:31:25,852 > TRAINING [Epoch : 5] loss : 1.0457, Accuracy : 55.2250
+[INFO|MainNetwork.py:208] 2019-10-23 14:31:26,589 > VALIDATION [Epoch : 5] loss : 1.0433, Accuracy : 55.5417
+[INFO|MainNetwork.py:182] 2019-10-23 14:31:27,656 > TRAINING [Epoch : 6] loss : 1.0445, Accuracy : 55.4167
+[INFO|MainNetwork.py:208] 2019-10-23 14:31:28,398 > VALIDATION [Epoch : 6] loss : 1.0437, Accuracy : 55.2917
+[INFO|MainNetwork.py:182] 2019-10-23 14:31:29,463 > TRAINING [Epoch : 7] loss : 1.0427, Accuracy : 55.8500
+[INFO|MainNetwork.py:208] 2019-10-23 14:31:30,203 > VALIDATION [Epoch : 7] loss : 1.0479, Accuracy : 55.3750
+[INFO|MainNetwork.py:182] 2019-10-23 14:31:31,273 > TRAINING [Epoch : 8] loss : 1.0422, Accuracy : 55.9250
+[INFO|MainNetwork.py:208] 2019-10-23 14:31:32,022 > VALIDATION [Epoch : 8] loss : 1.0433, Accuracy : 55.6250
+[INFO|MainNetwork.py:182] 2019-10-23 14:31:33,093 > TRAINING [Epoch : 9] loss : 1.0404, Accuracy : 56.1250
+[INFO|MainNetwork.py:208] 2019-10-23 14:31:33,839 > VALIDATION [Epoch : 9] loss : 1.0460, Accuracy : 55.8750
+[INFO|MainNetwork.py:182] 2019-10-23 14:31:34,910 > TRAINING [Epoch : 10] loss : 1.0395, Accuracy : 55.7917
+[INFO|MainNetwork.py:208] 2019-10-23 14:31:35,627 > VALIDATION [Epoch : 10] loss : 1.0452, Accuracy : 56.0417
+[INFO|MainNetwork.py:182] 2019-10-23 14:31:36,635 > TRAINING [Epoch : 11] loss : 1.0332, Accuracy : 56.6667
+[INFO|MainNetwork.py:208] 2019-10-23 14:31:37,332 > VALIDATION [Epoch : 11] loss : 1.0402, Accuracy : 56.1667
+[INFO|MainNetwork.py:182] 2019-10-23 14:31:38,351 > TRAINING [Epoch : 12] loss : 1.0298, Accuracy : 56.5667
+[INFO|MainNetwork.py:208] 2019-10-23 14:31:39,056 > VALIDATION [Epoch : 12] loss : 1.0393, Accuracy : 56.2917
+[INFO|MainNetwork.py:182] 2019-10-23 14:31:40,062 > TRAINING [Epoch : 13] loss : 1.0279, Accuracy : 56.9250
+[INFO|MainNetwork.py:208] 2019-10-23 14:31:40,762 > VALIDATION [Epoch : 13] loss : 1.0387, Accuracy : 56.2500
+[INFO|MainNetwork.py:182] 2019-10-23 14:31:41,778 > TRAINING [Epoch : 14] loss : 1.0264, Accuracy : 56.9500
+[INFO|MainNetwork.py:208] 2019-10-23 14:31:42,488 > VALIDATION [Epoch : 14] loss : 1.0381, Accuracy : 56.2917
+[INFO|MainNetwork.py:182] 2019-10-23 14:31:43,496 > TRAINING [Epoch : 15] loss : 1.0252, Accuracy : 57.0250
+[INFO|MainNetwork.py:208] 2019-10-23 14:31:44,206 > VALIDATION [Epoch : 15] loss : 1.0379, Accuracy : 56.5833
+[INFO|MainNetwork.py:182] 2019-10-23 14:31:45,218 > TRAINING [Epoch : 16] loss : 1.0235, Accuracy : 57.3750
+[INFO|MainNetwork.py:208] 2019-10-23 14:31:45,915 > VALIDATION [Epoch : 16] loss : 1.0378, Accuracy : 56.5417
+[INFO|MainNetwork.py:182] 2019-10-23 14:31:46,941 > TRAINING [Epoch : 17] loss : 1.0230, Accuracy : 57.4750
+[INFO|MainNetwork.py:208] 2019-10-23 14:31:47,641 > VALIDATION [Epoch : 17] loss : 1.0376, Accuracy : 56.5833
+[INFO|MainNetwork.py:182] 2019-10-23 14:31:48,651 > TRAINING [Epoch : 18] loss : 1.0226, Accuracy : 57.4917
+[INFO|MainNetwork.py:208] 2019-10-23 14:31:49,361 > VALIDATION [Epoch : 18] loss : 1.0376, Accuracy : 56.5417
+[INFO|MainNetwork.py:182] 2019-10-23 14:31:50,372 > TRAINING [Epoch : 19] loss : 1.0224, Accuracy : 57.4500
+[INFO|MainNetwork.py:208] 2019-10-23 14:31:51,079 > VALIDATION [Epoch : 19] loss : 1.0376, Accuracy : 56.5417
+[INFO|MainNetwork.py:182] 2019-10-23 14:31:52,104 > TRAINING [Epoch : 20] loss : 1.0222, Accuracy : 57.4250
+[INFO|MainNetwork.py:208] 2019-10-23 14:31:52,807 > VALIDATION [Epoch : 20] loss : 1.0375, Accuracy : 56.6667
+[INFO|MainNetwork.py:237] 2019-10-23 14:31:56,319 > TEST [Epoch : 1] loss : 1.0607, Accuracy : 52.6634
+[INFO|MainNetwork.py:243] 2019-10-23 14:31:56,384 > Epoch 20 Finished

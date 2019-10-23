@@ -44,10 +44,10 @@ class DataBatch(NetManager):
     # dataset을 batch size에 맞춰 구성
     # eachDataNum : 한 sequence 내에서 사용할 data의 개수
     def setDataset(self):
-        each_data_num = self.dataset_num // self.filelist_num
+        self.each_data_num = self.dataset_num // self.filelist_num
 
         for file_list in self.filelist:
-            self.unpackDataset(file_list, each_data_num)
+            self.unpackDataset(file_list, self.each_data_num)
         return
 
     # bin file로부터 data 읽어서 각각 구성 (intra mode, mode bit, residual)
