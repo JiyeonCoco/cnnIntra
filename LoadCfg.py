@@ -30,4 +30,10 @@ class NetManager(object):
     BATCH_SIZE = cfg.BATCH_SIZE
     OBJECT_EPOCH = cfg.OBJECT_EPOCH
     LEARNING_RATE = cfg.INIT_LEARNING_RATE
+<<<<<<< HEAD
     NUM_WORKER = cfg.NUM_WORKER
+=======
+    NUM_WORKER = cfg.NUM_WORKER
+
+
+>>>>>>> 67ca745eb67c1233cb87e6841d9b8aec18820a22

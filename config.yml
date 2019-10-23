@@ -1,13 +1,21 @@
 NET_INFO_PATH : ./config.yml
 EXPERIMENT_NAME : jyjung_test
+<<<<<<< HEAD
 IS_GPU : 0 # 0: not use GPU / 1: use GPU
+=======
+IS_GPU : 1 # 0: not use GPU / 1: use GPU
+>>>>>>> 67ca745eb67c1233cb87e6841d9b8aec18820a22
 
 TEST : 0
 TRAINING : 1
 VALIDATION : 2
 
 #path
+<<<<<<< HEAD
 DATASET_PATH : ./Dataset/
+=======
+DATASET_PATH : /home/yangwookim/Desktop/JY_Data/RMD_32x32/Dataset
+>>>>>>> 67ca745eb67c1233cb87e6841d9b8aec18820a22
 SAVE_PATH : model
 
 #DataShape (PU)
@@ -17,7 +25,11 @@ MODE_NUM : [11, 6]
 
 # enable to change : INIT_LEARNING_RATE / PRINT_PERIOD / BATCH_SIZE / OBJECT_EPOCH / NUM_WORKER(thread 개수/2)
 INIT_LEARNING_RATE : 0.001
+<<<<<<< HEAD
 PRINT_PERIOD : 5
+=======
+PRINT_PERIOD : 100
+>>>>>>> 67ca745eb67c1233cb87e6841d9b8aec18820a22
 DATASET_NUM : 20000
 BATCH_SIZE : 120
 OBJECT_EPOCH: 20

@@ -79,7 +79,6 @@ class ConvNet(nn.Module):
 
         return x
 
-
 if '__main__' == __name__:
     logger.info('Configs')
     for key,value in NetManager.cfg.member.items():

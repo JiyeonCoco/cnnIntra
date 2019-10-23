@@ -2,7 +2,11 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
+<<<<<<< HEAD
       <module fileurl="file://$PROJECT_DIR$/.idea/cnnIntra.iml" filepath="$PROJECT_DIR$/.idea/cnnIntra.iml" />
+=======
+      <module fileurl="file://$PROJECT_DIR$/.idea/jjy_netstruct.iml" filepath="$PROJECT_DIR$/.idea/jjy_netstruct.iml" />
+>>>>>>> 67ca745eb67c1233cb87e6841d9b8aec18820a22
     </modules>
   </component>
 </project>
