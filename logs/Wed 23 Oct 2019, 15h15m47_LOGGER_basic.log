@@ -1,0 +1,25 @@
+INFO:root:Configs
+INFO:root:NET_INFO_PATH : ./config.yml
+INFO:root:EXPERIMENT_NAME : jyjung_test
+INFO:root:IS_GPU : 0
+INFO:root:TEST : 0
+INFO:root:TRAINING : 1
+INFO:root:VALIDATION : 2
+INFO:root:DATASET_PATH : ./Dataset/
+INFO:root:SAVE_PATH : model
+INFO:root:PU_SIZE : [8, 32]
+INFO:root:QP_LIST : [22, 32]
+INFO:root:MODE_NUM : [11, 6]
+INFO:root:INIT_LEARNING_RATE : 0.001
+INFO:root:PRINT_PERIOD : 10
+INFO:root:DATASET_NUM : 20000
+INFO:root:BATCH_SIZE : 120
+INFO:root:OBJECT_EPOCH : 20
+INFO:root:GPU_MONITOR : 1
+INFO:root:NUM_WORKER : 12
+INFO:root:Training Set : 9 6666
+INFO:root:Validation Set : 9
+INFO:root:Test set : 1109
+INFO:root:Training Start
+INFO:root:VALIDATION [Epoch : 1] loss : 0.9570, Accuracy : 60.5556
+INFO:root:VALIDATION [Epoch : 2] loss : 0.9399, Accuracy : 60.5556

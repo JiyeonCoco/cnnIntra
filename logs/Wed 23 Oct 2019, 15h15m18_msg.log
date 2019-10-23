@@ -1,0 +1,25 @@
+[INFO|MainNetwork.py:90] 2019-10-23 15:15:19,267 > Configs
+[INFO|MainNetwork.py:92] 2019-10-23 15:15:19,268 > NET_INFO_PATH : ./config.yml
+[INFO|MainNetwork.py:92] 2019-10-23 15:15:19,268 > EXPERIMENT_NAME : jyjung_test
+[INFO|MainNetwork.py:92] 2019-10-23 15:15:19,268 > IS_GPU : 0
+[INFO|MainNetwork.py:92] 2019-10-23 15:15:19,268 > TEST : 0
+[INFO|MainNetwork.py:92] 2019-10-23 15:15:19,268 > TRAINING : 1
+[INFO|MainNetwork.py:92] 2019-10-23 15:15:19,268 > VALIDATION : 2
+[INFO|MainNetwork.py:92] 2019-10-23 15:15:19,268 > DATASET_PATH : ./Dataset/
+[INFO|MainNetwork.py:92] 2019-10-23 15:15:19,268 > SAVE_PATH : model
+[INFO|MainNetwork.py:92] 2019-10-23 15:15:19,268 > PU_SIZE : [8, 32]
+[INFO|MainNetwork.py:92] 2019-10-23 15:15:19,269 > QP_LIST : [22, 32]
+[INFO|MainNetwork.py:92] 2019-10-23 15:15:19,269 > MODE_NUM : [11, 6]
+[INFO|MainNetwork.py:92] 2019-10-23 15:15:19,269 > INIT_LEARNING_RATE : 0.001
+[INFO|MainNetwork.py:92] 2019-10-23 15:15:19,269 > PRINT_PERIOD : 100
+[INFO|MainNetwork.py:92] 2019-10-23 15:15:19,269 > DATASET_NUM : 20000
+[INFO|MainNetwork.py:92] 2019-10-23 15:15:19,269 > BATCH_SIZE : 120
+[INFO|MainNetwork.py:92] 2019-10-23 15:15:19,269 > OBJECT_EPOCH : 20
+[INFO|MainNetwork.py:92] 2019-10-23 15:15:19,269 > GPU_MONITOR : 1
+[INFO|MainNetwork.py:92] 2019-10-23 15:15:19,269 > NUM_WORKER : 12
+[INFO|MainNetwork.py:143] 2019-10-23 15:15:21,709 > Training Set : 9 6666
+[INFO|MainNetwork.py:144] 2019-10-23 15:15:21,709 > Validation Set : 9
+[INFO|MainNetwork.py:145] 2019-10-23 15:15:21,710 > Test set : 1109
+[INFO|MainNetwork.py:146] 2019-10-23 15:15:21,710 > Training Start
+[INFO|MainNetwork.py:207] 2019-10-23 15:15:30,827 > VALIDATION [Epoch : 1] loss : 0.9787, Accuracy : 60.1852
+[INFO|MainNetwork.py:207] 2019-10-23 15:15:39,232 > VALIDATION [Epoch : 2] loss : 0.9571, Accuracy : 59.9074
